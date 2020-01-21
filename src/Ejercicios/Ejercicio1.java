@@ -8,8 +8,27 @@ public class Ejercicio1 {
 
     private static String order(String[] array){
 
-        System.out.println(array[1].compareToIgnoreCase("Prro"));
-        System.out.println(array[1].compareToIgnoreCase("Ramon"));
+        String[] arrayOrdenado = new String[array.length];
+
+        int palabrasOrdenadas = 0;
+
+        while (palabrasOrdenadas < array.length){
+            for (int i = 0; i < array.length; i++){
+
+
+
+                for (int j = 0; j < array.length; j++){
+
+                    if ( i != j ){
+
+
+
+                    }
+
+                }
+            }
+        }
+
 
         return "Hola";
     }
@@ -36,26 +55,7 @@ public class Ejercicio1 {
 
         order(palabras);
 
-        /*
 
-        for (String s : palabras){
-            char x = s.charAt(0);
-
-            for (String j: palabras){
-                char i = j.charAt(0);
-
-                if ((int)x == (int) i) {
-                    System.out.println("Iguales");
-                }else if ((int) x > (int) i){
-                    System.out.println(j);
-                }else if ( (int) x < (int) i){
-                    System.out.println(s);
-                }
-            }
-
-        }
-
-        */
 
     }
 
