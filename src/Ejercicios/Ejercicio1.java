@@ -31,11 +31,15 @@ public class Ejercicio1 {
      */
     private static void order(String[] array){
 
+
+
         System.out.println("Ordenando...");
         System.out.println("------------");
 
         String[] arrayOrdenado = new String[array.length];
 
+
+        long startTime = System.nanoTime();
         // Bucle que se ejecuta hasta que se llena arrayOrdenado
         for (int palabrasOrdenadas = 0; palabrasOrdenadas < array.length; palabrasOrdenadas++){
 
@@ -68,6 +72,10 @@ public class Ejercicio1 {
         for (String s : arrayOrdenado)
             System.out.println("- " + s);
 
+
+        long endTime   = System.nanoTime();
+        long totalTime = (endTime - startTime) / 1000;
+        System.out.println(totalTime);
     }
 
     public static void main(String[] args){
@@ -95,5 +103,7 @@ public class Ejercicio1 {
                 System.out.println("Entrada inválida...");
             }
         }
+
+
     }
 }
