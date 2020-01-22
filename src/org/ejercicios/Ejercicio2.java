@@ -7,9 +7,9 @@ public class Ejercicio2 {
 
     /**
      * MOSTRAR EL ARRAY DE FORMA ADECUADA Y COMPRENSIBLE
-     * @param sueldos
-     * @param empresas
-     * @param empleados
+     * @param sueldos Array con los sueldos de los trabajadores
+     * @param empresas Array con las empresas
+     * @param empleados Array con los empleados
      */
     private static void showArray (int[][][] sueldos, String[] empresas, String[][] empleados){
 
