@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69208720-1876-4a36-a26c-b7b9393416e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Ejercicios/Ejercicio2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EjerciciosArrays.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EjerciciosArrays.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/EjerciciosArrays/Ejercicios/Ejercicio1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosArrays/Ejercicios/Ejercicio1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicios/Ejercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicios/Ejercicio1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EjerciciosArrays/Ejercicios/Ejercicio2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosArrays/Ejercicios/Ejercicio2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicios/Ejercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ejercicios/Ejercicio1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicios/Ejercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ejercicios/Ejercicio2.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +28,12 @@
   <component name="ProjectId" id="1WiOTLj2Ms83dtGpumcpJtdSweM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -41,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Ejercicio2">
+  <component name="RunManager" selected="Application.Ejercicio1">
     <configuration name="Ejercicio1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Ejercicios.Ejercicio1" />
       <module name="EjerciciosArrays" />
@@ -70,8 +76,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Ejercicio2" />
         <item itemvalue="Application.Ejercicio1" />
+        <item itemvalue="Application.Ejercicio2" />
       </list>
     </recent_temporary>
   </component>

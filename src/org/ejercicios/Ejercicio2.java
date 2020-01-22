@@ -1,4 +1,4 @@
-package Ejercicios;
+package org.ejercicios;
 
 import java.util.Random;
 

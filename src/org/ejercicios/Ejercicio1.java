@@ -1,6 +1,5 @@
-package Ejercicios;
+package org.ejercicios;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio1 {
@@ -9,9 +8,8 @@ public class Ejercicio1 {
      * FILLARRAY
      * Rellena el array pasado con cadenas que se le piden al usuario
      * @param array array que deseas ordenar
-     * @return array rellenado
      */
-    private static String[] fillArray(String[] array){
+    private static void fillArray(String[] array){
 
         Scanner sc = new Scanner(System.in);
 
@@ -20,7 +18,6 @@ public class Ejercicio1 {
             array[i] = sc.nextLine();
         }
 
-        return array;
     }
 
     /**
@@ -31,15 +28,11 @@ public class Ejercicio1 {
      */
     private static void order(String[] array){
 
-
-
         System.out.println("Ordenando...");
         System.out.println("------------");
 
         String[] arrayOrdenado = new String[array.length];
 
-
-        long startTime = System.nanoTime();
         // Bucle que se ejecuta hasta que se llena arrayOrdenado
         for (int palabrasOrdenadas = 0; palabrasOrdenadas < array.length; palabrasOrdenadas++){
 
@@ -49,12 +42,10 @@ public class Ejercicio1 {
             for(int i = 0; i < array.length; i++){
 
                 // Tomando la primera palabra compruebo hasta encontrar otra mayor lexograficamente
-
                 if (posPalabra != i){
                     // En el caso de que encuentre una palabra mayor cambiarla
-                    if(array[posPalabra].compareToIgnoreCase(array[i]) > 0){
+                    if(array[posPalabra].compareToIgnoreCase(array[i]) > 0)
                         posPalabra = i;
-                    }
                 }
             }
             // Una vez terminado el bulce añado la palabra en la primera posicion del array y la elimino del array principal
@@ -72,10 +63,6 @@ public class Ejercicio1 {
         for (String s : arrayOrdenado)
             System.out.println("- " + s);
 
-
-        long endTime   = System.nanoTime();
-        long totalTime = (endTime - startTime) / 1000;
-        System.out.println(totalTime);
     }
 
     public static void main(String[] args){
