@@ -16,6 +16,7 @@ public class Ejercicio2 {
         // ITERO POR CADA EMPRESA
         for (int i = 0; i < sueldos.length; i++){
 
+            System.out.println("Empresa: " + empresas[i]);
             // VARIABLE STRING EN LA QUE SE GUARDARA LA CADENA QUE DIRA LOS ÍNDICES DE EMPLEADO CON SUELDO MEDIO MAS ALTO
             String indice = "";
 
@@ -23,7 +24,7 @@ public class Ejercicio2 {
 
             // ITERO POR CADA EMPLEADO
             for (int j = 0; j < sueldos[i].length; j++){
-                System.out.println("Empresa: " + empresas[i] + "\n Empleado: " + empleados[i][j]);
+                System.out.println("    Empleado: " + empleados[i][j]);
 
                 // VARIABLE QUE VA GUARDANDO LA SUMA DEL SALARIO
                 int sumaSalario = 0;
@@ -31,7 +32,7 @@ public class Ejercicio2 {
                 // ITERO POR LOS MESES
                 for (int x = 0; x < sueldos[i][j].length; x++){
 
-                    System.out.println("Sueldo del mes " + x + ": " + sueldos[i][j][x]);
+                    System.out.println("        Sueldo del mes " + x + ": " + sueldos[i][j][x]);
                     sumaSalario += sueldos[i][j][x];
                 }
 
@@ -42,14 +43,15 @@ public class Ejercicio2 {
                 // SI ES ASÍ GUARDO SUS INDICES EN LA VARIABLE INDICE
                 if (salarioMedio > salarioMedioMaximo){
                     indice = "índices del array del empleado con el sueldo medio más alto: " + i + ", " + j;
+                    salarioMedioMaximo = salarioMedio;
                 }
 
-                System.out.println("El salario medio del trabajador es: " + salarioMedio);
-                System.out.println("----------------------");
+                System.out.println("        El salario medio del trabajador es: " + salarioMedio);
+                System.out.println("------------------------------------------------------------------");
             }
-
-            System.out.println("=============");
             System.out.println(indice);
+            System.out.println("=============");
+
         }
 
 
