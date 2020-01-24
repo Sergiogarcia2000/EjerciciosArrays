@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69208720-1876-4a36-a26c-b7b9393416e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/org/ejercicios/Ejercicio3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/ejercicios/Ejercicio4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EjerciciosArrays/META-INF/EjerciciosArrays.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EjerciciosArrays/org/ejercicios/Ejercicio1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosArrays/org/ejercicios/Ejercicio1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/ejercicios/Ejercicio4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ejercicios/Ejercicio4.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +30,8 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
