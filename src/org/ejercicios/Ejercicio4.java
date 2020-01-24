@@ -29,35 +29,8 @@ public class Ejercicio4 {
             System.out.println("------------------------");
         }
 
-        System.out.println("Se han encontrado " + cantidadJugadoresLibres + " resultados.");
+        System.out.println("Se han encontrado " + (cantidadJugadoresLibres + 1) + " resultados.");
 
-    }
-
-    /**
-     * Si la palabra tiene una tilde la cambia por la misma vocal sin tilde.
-     * @param palabra palabra para analizar
-     * @return resultado
-     */
-    private static String quitarTilde(String palabra){
-
-        StringBuilder string = new StringBuilder(palabra);
-
-        for (int i = 0; i < palabra.length(); i++){
-
-            if (palabra.toLowerCase().charAt(i) == 'á'){
-                string.setCharAt(i,'a');
-            }else if (palabra.toLowerCase().charAt(i) == 'é'){
-                string.setCharAt(i,'e');
-            }else if (palabra.toLowerCase().charAt(i) == 'í'){
-                string.setCharAt(i,'i');
-            }else if (palabra.toLowerCase().charAt(i) == 'ó'){
-                string.setCharAt(i,'o');
-            }else if (palabra.toLowerCase().charAt(i) == 'ú'){
-                string.setCharAt(i,'u');
-            }
-        }
-
-        return string.toString();
     }
 
     /**
@@ -80,7 +53,7 @@ public class Ejercicio4 {
             int aleatorio = rand.nextInt(100);
 
             if(aleatorio < 50){
-                nombres[contador] = quitarTilde(cadena);
+                nombres[contador] = cadena;
                 contador++;
             }
 
@@ -258,7 +231,7 @@ public class Ejercicio4 {
             System.out.println("------------------------");
         }
 
-        System.out.println("Se han encontrado " + cantidadJugadores + " juadores.");
+        System.out.println("Se han encontrado " + cantidadJugadores + " jugadores.");
 
     }
 
