@@ -1,6 +1,11 @@
 package org.ejercicios;
 
+import java.util.Locale;
 import java.util.Random;
+
+/**
+ * @author SERGIO GARCIA MAYO
+ */
 
 public class Ejercicio2 {
 
@@ -32,7 +37,8 @@ public class Ejercicio2 {
                 // ITERO POR LOS MESES
                 for (int x = 0; x < sueldos[i][j].length; x++){
 
-                    System.out.println("        Sueldo del mes " + x + ": " + sueldos[i][j][x]);
+                    System.out.print("        Sueldo del mes " + x + ": ");
+                    System.out.printf(Locale.ITALY, "%,d €%n", sueldos[i][j][x]);
                     sumaSalario += sueldos[i][j][x];
                 }
 
@@ -42,11 +48,12 @@ public class Ejercicio2 {
                 // COMPRUEBO SI SU SALARIO MEDIO ES MAYOR QUE EL MAXIMO
                 // SI ES ASÍ GUARDO SUS INDICES EN LA VARIABLE INDICE
                 if (salarioMedio > salarioMedioMaximo){
-                    indice = "índices del array del empleado con el sueldo medio más alto: " + i + ", " + j;
+                    indice = "índices del array del empleado con el sueldo medio más alto: [" + i + ", " + j + "]";
                     salarioMedioMaximo = salarioMedio;
                 }
 
-                System.out.println("        El salario medio del trabajador es: " + salarioMedio);
+                System.out.print("        El salario medio del trabajador es: ");
+                System.out.printf(Locale.ITALY, "%,d €%n", salarioMedio);
                 System.out.println("------------------------------------------------------------------");
             }
             System.out.println(indice);

@@ -2,6 +2,9 @@ package org.ejercicios;
 
 import java.util.Scanner;
 
+/**
+ * @author SERGIO GARCIA MAYO
+ */
 public class Ejercicio3 {
 
 
@@ -37,6 +40,14 @@ public class Ejercicio3 {
                         System.arraycopy(procesos, 1, procesos, 0, procesos.length - 1);
                         ultimaPos--;
                     }
+
+                    if (ultimaPos > 0){
+                        System.out.println("====LISTADO DE PROCESOS====");
+                        for(int i = 0; i < ultimaPos; i++){
+                            System.out.println(procesos[i]);
+                        }
+                    }
+
                     break;
                 case "3":
                     break label;

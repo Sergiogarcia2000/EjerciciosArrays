@@ -27,8 +27,19 @@ public class EjercicioExtra {
                     procesos[ultimaPos][0] = sc.nextLine();
                     System.out.print("Ciclos del proceso: ");
                     procesos[ultimaPos][1] = sc.nextLine();
-                    System.out.println("Proceso añadido con éxito.");
-                    ultimaPos++;
+
+                    // TRY CATCH PARA COMPROBAR QUE AÑADE UN NÚMERO EN VEZ DE UNA LETRA
+                    try{
+                        if (Integer.parseInt(procesos[ultimaPos][1]) > 0){
+                            System.out.println("Proceso añadido con éxito.");
+                            ultimaPos++;
+                        }else{
+                            System.out.println("El número introducido debe ser mayor que 0.");
+                        }
+                    }catch (java.lang.NumberFormatException e){
+                        System.out.println("Debes introducir un número");
+                    }
+
                     break;
                 case "2":
                     if (ultimaPos <= 0) {
@@ -50,14 +61,18 @@ public class EjercicioExtra {
                             String nombre = procesos[0][0];
                             String ciclos = procesos[0][1];
 
-                            System.arraycopy(procesos, 1, procesos, 0, ultimaPos - 1);
+                            // RECORRER TODOS LOS PROCESOS UNA POSICION ADELANTE
+                            for (int i = 0; i < ultimaPos - 1; i++) {
+                                procesos[i][0] = procesos[i + 1][0];
+                                procesos[i][1] = procesos[i + 1][1];
+                            }
 
+                            // ESTABLECER EL ÚLTIMO PROCESO AL QUE FUE PRIMERO
                             procesos[ultimaPos - 1][0] = nombre;
                             procesos[ultimaPos - 1][1] = ciclos;
-
-
                         }
 
+                        System.out.println("====== LISTADO DE PROCESOS ======");
                         for(int i = 0; i < ultimaPos; i++){
                             System.out.println(procesos[i][0] + " - " + procesos[i][1]);
                         }
@@ -70,9 +85,5 @@ public class EjercicioExtra {
                     break;
             }
         }
-
-
     }
-
-
 }

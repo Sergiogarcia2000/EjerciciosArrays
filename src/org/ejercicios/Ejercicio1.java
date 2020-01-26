@@ -2,6 +2,9 @@ package org.ejercicios;
 
 import java.util.Scanner;
 
+/**
+ * @author SERGIO GARCIA MAYO
+ */
 public class Ejercicio1 {
 
     /**

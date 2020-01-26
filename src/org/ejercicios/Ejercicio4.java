@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.InputMismatchException;
+import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -25,12 +26,12 @@ public class Ejercicio4 {
 
         System.out.println("JUGADORES LIBRES: ");
         for (int i = 0; i < cantidadJugadoresLibres; i++) {
-            System.out.println("Jugador: " + jugadoresLibres[i][0] + "\n Precio: " + jugadoresLibres[i][1]);
+            System.out.println("Jugador: " + jugadoresLibres[i][0]);
+            System.out.print("Precio: ");
+            System.out.printf(Locale.ITALY, "%,d €%n", Integer.parseInt(jugadoresLibres[i][1]));
             System.out.println("------------------------");
         }
-
         System.out.println("Se han encontrado " + (cantidadJugadoresLibres + 1) + " resultados.");
-
     }
 
     /**
@@ -68,7 +69,7 @@ public class Ejercicio4 {
         while(i < jugadoresLibres.length){
 
             int jugador = rand.nextInt(198);
-            int dinero = rand.nextInt(200000) + 200000;
+            int dinero = rand.nextInt(400000) + 600000;
 
             boolean disponible = true;
 
@@ -86,8 +87,6 @@ public class Ejercicio4 {
                 jugadoresUsados[i] = jugador;
                 i++;
             }
-
-
         }
         b.close();
     }
@@ -103,7 +102,6 @@ public class Ejercicio4 {
         int posicion = 0;
         boolean encontrado = false;
         Scanner sc = new Scanner(System.in);
-
 
         System.out.print("Jugador: ");
         String opcion = sc.nextLine().toLowerCase();
@@ -122,8 +120,7 @@ public class Ejercicio4 {
 
             if (dinero >= Integer.parseInt(jugadoresLibres[posicion][1])){
 
-
-                System.out.println("¿Estas seguro de que quieres comprar este jugador por " + jugadoresLibres[posicion][1] + " €? (si/no)");
+                System.out.println("¿Estas seguro de que quieres comprar a " + jugadoresLibres[posicion][0] + " por " + jugadoresLibres[posicion][1] + " €? (si/no)");
                 opcion = sc.nextLine().toLowerCase();
 
                 if (opcion.equals("si")){
@@ -145,9 +142,10 @@ public class Ejercicio4 {
                     System.out.println("--------------------------");
                 }else if (opcion.equals("no")){
                     System.out.println("--------------------------");
+                }else{
+                    System.out.println("Entrada desconocida.");
                 }
             }else{
-
                 System.out.println("No cuentas con el dinero suficiente para comprar al jugador.");
             }
         }else{
@@ -187,8 +185,6 @@ public class Ejercicio4 {
                 System.out.println("¿Estas seguro de que quieres vender este jugador por " + jugadoresPertenecientes[posicion][1] + " €? (si/no)");
                 opcion = sc.nextLine().toLowerCase();
 
-                System.out.println(opcion);
-
                 if (opcion.equals("si")){
                     dinero += Integer.parseInt(jugadoresPertenecientes[posicion][1]);
 
@@ -208,15 +204,15 @@ public class Ejercicio4 {
                     System.out.println("--------------------------");
                 }else if (opcion.equals("no")){
                     System.out.println("--------------------------");
+                }else{
+                    System.out.println("Entrada desconocida.");
                 }
             }else{
-                System.out.println("No cuentas con el dinero suficiente para comprar al jugador.");
+                System.out.println("No se ha encontrado el jugador en tu plantilla.");
             }
         }else {
             System.out.println("No tienes jugadores!");
         }
-
-
     }
 
     /**
@@ -227,24 +223,26 @@ public class Ejercicio4 {
         System.out.println("TUS JUGADORES: ");
 
         for (int i = 0; i < cantidadJugadores; i++) {
-            System.out.println("Jugador: " + jugadoresPertenecientes[i][0] + "\n Precio: " + jugadoresPertenecientes[i][1]);
+            System.out.println("Jugador: " + jugadoresPertenecientes[i][0]);
+            System.out.print("Precio: ");
+            System.out.printf(Locale.ITALY, "%,d €%n", Integer.parseInt(jugadoresPertenecientes[i][1]));
             System.out.println("------------------------");
         }
 
         System.out.println("Se han encontrado " + cantidadJugadores + " jugadores.");
-
     }
 
     public static void main(String[] args) throws IOException {
 
         generarNombres();
 
-        Scanner sc = new Scanner(System.in);
-
         label:
         while (true){
 
             try{
+
+                Scanner sc = new Scanner(System.in);
+
                 System.out.println("==============================");
                 System.out.println("1. Desplegar jugadores disponibles y precios.");
                 System.out.println("2. Desplegar jugadores comprados y precios pagados.");
@@ -269,7 +267,8 @@ public class Ejercicio4 {
                         }
                         break;
                     case 3:
-                        System.out.println("Dinero disponible: " + dinero);
+                        System.out.println("Dinero disponible: ");
+                        System.out.printf(Locale.ITALY, "%,d €%n", dinero);
                         break;
                     case 4:
                         comprarJugador();
@@ -282,13 +281,10 @@ public class Ejercicio4 {
                     default:
                         System.out.println("Opción desconocida.");
                 }
-
             }catch(InputMismatchException e){
                 System.out.println("Entrada inválida");
             }
         }
-
-        sc.close();
     }
 
 }
