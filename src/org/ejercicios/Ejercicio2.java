@@ -37,7 +37,7 @@ public class Ejercicio2 {
                 // ITERO POR LOS MESES
                 for (int x = 0; x < sueldos[i][j].length; x++){
 
-                    System.out.print("        Sueldo del mes " + x + ": ");
+                    System.out.print("        Sueldo del mes " + (x + 1) + ": ");
                     System.out.printf(Locale.ITALY, "%,d €%n", sueldos[i][j][x]);
                     sumaSalario += sueldos[i][j][x];
                 }
