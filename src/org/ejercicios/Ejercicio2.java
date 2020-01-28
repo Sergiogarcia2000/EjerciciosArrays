@@ -18,6 +18,9 @@ public class Ejercicio2 {
      */
     private static void showArray (int[][][] sueldos, String[] empresas, String[][] empleados){
 
+        int salarioMedioMaxTotal = 0;
+        String indiceTotal = "";
+
         // ITERO POR CADA EMPRESA
         for (int i = 0; i < sueldos.length; i++){
 
@@ -48,8 +51,13 @@ public class Ejercicio2 {
                 // COMPRUEBO SI SU SALARIO MEDIO ES MAYOR QUE EL MAXIMO
                 // SI ES ASÍ GUARDO SUS INDICES EN LA VARIABLE INDICE
                 if (salarioMedio > salarioMedioMaximo){
-                    indice = "índices del array del empleado con el sueldo medio más alto: [" + i + ", " + j + "]";
+                    indice = "Índices del array del empleado con el sueldo medio más alto: [" + i + ", " + j + "]";
                     salarioMedioMaximo = salarioMedio;
+                }
+
+                if(salarioMedioMaximo > salarioMedioMaxTotal){
+                    indiceTotal = "Índices del array del empleado de las tres empresas con el sueldo medio más alto: [" + i + ", " + j + "]";
+                    salarioMedioMaxTotal = salarioMedioMaximo;
                 }
 
                 System.out.print("        El salario medio del trabajador es: ");
@@ -61,7 +69,7 @@ public class Ejercicio2 {
 
         }
 
-
+        System.out.println(indiceTotal);
     }
 
     public static void main(String[] args){
