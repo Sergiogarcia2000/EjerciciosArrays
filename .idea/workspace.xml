@@ -1,52 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69208720-1876-4a36-a26c-b7b9393416e1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ccd6d501-b596-4ff0-ba33-90c16bcee515" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EjerciciosArrays/org/ejercicios/Ejercicio1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosArrays/org/ejercicios/Ejercicio1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/EjerciciosArrays/org/ejercicios/Ejercicio2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosArrays/org/ejercicios/Ejercicio2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EjerciciosArrays/org/ejercicios/Ejercicio3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosArrays/org/ejercicios/Ejercicio3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/EjerciciosArrays/org/ejercicios/Ejercicio4.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/EjerciciosArrays/org/ejercicios/EjercicioExtra.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EjerciciosArrays/org/ejercicios/EjercicioExtra.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ejercicios/Ejercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ejercicios/Ejercicio1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ejercicios/Ejercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ejercicios/Ejercicio2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ejercicios/Ejercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ejercicios/Ejercicio3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ejercicios/Ejercicio4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ejercicios/Ejercicio4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ejercicios/EjercicioExtra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ejercicios/EjercicioExtra.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1WiOTLj2Ms83dtGpumcpJtdSweM" />
+  <component name="ProjectId" id="1X29mny2LHbNJCkO2oHxENuACOe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Application.Ejercicio4">
     <configuration name="Ejercicio1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -124,28 +110,16 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="69208720-1876-4a36-a26c-b7b9393416e1" name="Default Changelist" comment="" />
-      <created>1579628957058</created>
+      <changelist id="ccd6d501-b596-4ff0-ba33-90c16bcee515" name="Default Changelist" comment="" />
+      <created>1580233484052</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1579628957058</updated>
+      <updated>1580233484052</updated>
     </task>
     <servers />
   </component>
@@ -161,69 +135,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="751" y="361" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580065851155">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="534" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1579962697603" />
-    <state x="751" y="361" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580065851155" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1580065837204">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580065837204" />
-    <state width="675" height="569" key="GridCell.Tab.0.bottom" timestamp="1580070106392">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1323" height="76" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579969597860" />
-    <state width="675" height="569" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580070106392" />
-    <state width="675" height="569" key="GridCell.Tab.0.center" timestamp="1580070106392">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1323" height="76" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579969597860" />
-    <state width="675" height="569" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580070106392" />
-    <state width="675" height="569" key="GridCell.Tab.0.left" timestamp="1580070106392">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1323" height="76" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579969597860" />
-    <state width="675" height="569" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580070106392" />
-    <state width="675" height="569" key="GridCell.Tab.0.right" timestamp="1580070106392">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1323" height="76" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579969597860" />
-    <state width="675" height="569" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580070106392" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1580068219822">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579969288291" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580068219822" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1580068219822">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1579969288291" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580068219822" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1580068219822">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1579969288291" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580068219822" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1580068219822">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1579969288291" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580068219822" />
-    <state x="259" y="10" key="SettingsEditor" timestamp="1580066127765">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1579962823215" />
-    <state x="259" y="10" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580066127765" />
-    <state x="656" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1580066098512">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="656" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580066098512" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1579965318637">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1579965318637" />
   </component>
 </project>

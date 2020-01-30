@@ -74,8 +74,8 @@ public class Ejercicio4 {
             boolean disponible = true;
 
             // Comprueba si el jugador aleatorio ya esta usado
-            for (int jugadoresUsado : jugadoresUsados) {
-                if (jugador == jugadoresUsado) {
+            for (int jugadorUsado : jugadoresUsados) {
+                if (jugador == jugadorUsado) {
                     disponible = false;
                     break;
                 }
@@ -103,53 +103,57 @@ public class Ejercicio4 {
         boolean encontrado = false;
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Jugador: ");
-        String opcion = sc.nextLine().toLowerCase();
+        if (cantidadJugadores <= 11){
+            System.out.print("Jugador: ");
+            String opcion = sc.nextLine().toLowerCase();
 
-        for (int i = 0; i < jugadoresLibres.length; i++){
+            for (int i = 0; i < jugadoresLibres.length; i++){
 
-            if (opcion.equals(jugadoresLibres[i][0].toLowerCase())){
+                if (opcion.equals(jugadoresLibres[i][0].toLowerCase())){
 
-                System.out.println("Jugador encontrado!");
-                encontrado = true;
-                posicion = i;
+                    System.out.println("Jugador encontrado!");
+                    encontrado = true;
+                    posicion = i;
+                }
             }
-        }
 
-        if(encontrado){
+            if(encontrado){
 
-            if (dinero >= Integer.parseInt(jugadoresLibres[posicion][1])){
+                if (dinero >= Integer.parseInt(jugadoresLibres[posicion][1])){
 
-                System.out.println("¿Estas seguro de que quieres comprar a " + jugadoresLibres[posicion][0] + " por " + jugadoresLibres[posicion][1] + " €? (si/no)");
-                opcion = sc.nextLine().toLowerCase();
+                    System.out.println("¿Estas seguro de que quieres comprar a " + jugadoresLibres[posicion][0] + " por " + jugadoresLibres[posicion][1] + " €? (si/no)");
+                    opcion = sc.nextLine().toLowerCase();
 
-                if (opcion.equals("si")){
-                    dinero -= Integer.parseInt(jugadoresLibres[posicion][1]);
+                    if (opcion.equals("si")){
+                        dinero -= Integer.parseInt(jugadoresLibres[posicion][1]);
 
-                    jugadoresPertenecientes[cantidadJugadores][0] = jugadoresLibres[posicion][0];
-                    jugadoresPertenecientes[cantidadJugadores][1] = jugadoresLibres[posicion][1];
+                        jugadoresPertenecientes[cantidadJugadores][0] = jugadoresLibres[posicion][0];
+                        jugadoresPertenecientes[cantidadJugadores][1] = jugadoresLibres[posicion][1];
 
-                    for (int j = posicion; j < jugadoresLibres.length - 1; j++){
+                        for (int j = posicion; j < jugadoresLibres.length - 1; j++){
 
-                        jugadoresLibres[j][0] = jugadoresLibres[j + 1][0];
-                        jugadoresLibres[j][1] = jugadoresLibres[j + 1][1];
+                            jugadoresLibres[j][0] = jugadoresLibres[j + 1][0];
+                            jugadoresLibres[j][1] = jugadoresLibres[j + 1][1];
 
+                        }
+                        cantidadJugadoresLibres--;
+                        cantidadJugadores++;
+
+                        System.out.println("Jugador/a comprado/a con éxito!");
+                        System.out.println("--------------------------");
+                    }else if (opcion.equals("no")){
+                        System.out.println("--------------------------");
+                    }else{
+                        System.out.println("Entrada desconocida.");
                     }
-                    cantidadJugadoresLibres--;
-                    cantidadJugadores++;
-
-                    System.out.println("Jugador/a comprado/a con éxito!");
-                    System.out.println("--------------------------");
-                }else if (opcion.equals("no")){
-                    System.out.println("--------------------------");
                 }else{
-                    System.out.println("Entrada desconocida.");
+                    System.out.println("No cuentas con el dinero suficiente para comprar al jugador.");
                 }
             }else{
-                System.out.println("No cuentas con el dinero suficiente para comprar al jugador.");
+                System.out.println("Jugador no encontrado. Asegúrate de que lo has escrito bien o está en la lista.");
             }
         }else{
-            System.out.println("Jugador no encontrado. Asegúrate de que lo has escrito bien o está en la lista.");
+            System.out.println("Tu equipo ya está completo.");
         }
     }
 

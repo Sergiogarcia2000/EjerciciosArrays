@@ -1,5 +1,6 @@
 package org.ejercicios;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class EjercicioExtra {
@@ -10,6 +11,22 @@ public class EjercicioExtra {
         String[][] procesos = new String[100][2];
         int ultimaPos = 0;
 
+        int quantum = 0;
+
+        do{
+            try{
+                Scanner scan = new Scanner(System.in);
+
+                System.out.print("Introduce un quantum: ");
+                quantum = scan.nextInt();
+
+                if (quantum <= 0)
+                    System.out.println("El número debe ser mayor que 0");
+
+            }catch (InputMismatchException e){
+                System.out.println("El valor introducido no es válido.");
+            }
+        }while (quantum <= 0);
 
         label:
         while(true){
@@ -17,7 +34,8 @@ public class EjercicioExtra {
             System.out.println("====ROUND ROBIN====");
             System.out.println("1. Añadir proceso a la cola.");
             System.out.println("2. Permitir el acceso a un proceso.");
-            System.out.println("3. Salir");
+            System.out.println("3. Cambiar el valor del quantum.");
+            System.out.println("4. Salir");
             System.out.print("Introduce una opción: ");
             String opcion = sc.nextLine();
 
@@ -46,16 +64,16 @@ public class EjercicioExtra {
                         System.out.println("No hay procesos en la cola");
                     } else {
 
-                        if (Integer.parseInt(procesos[0][1]) <= 1){
+                        if (Integer.parseInt(procesos[0][1]) <= quantum){
 
                             System.out.println("Se ha terminado de procesar el proceso con nombre: " + procesos[0][0]);
                             System.arraycopy(procesos, 1, procesos, 0, ultimaPos - 1);
                             ultimaPos--;
                         }else{
 
-                            System.out.println("Se procesa un ciclo del proceso " + procesos[0][0]);
+                            System.out.println("Se procesa " + quantum + " ciclo/s del proceso " + procesos[0][0]);
 
-                            procesos[0][1] = Integer.toString(Integer.parseInt(procesos[0][1]) - 1);
+                            procesos[0][1] = Integer.toString(Integer.parseInt(procesos[0][1]) - quantum);
                             System.out.println("Numero de ciclos restantes: " + procesos[0][1]);
 
                             String nombre = procesos[0][0];
@@ -79,6 +97,22 @@ public class EjercicioExtra {
                     }
                     break;
                 case "3":
+                    do{
+                        try{
+                            Scanner scan = new Scanner(System.in);
+
+                            System.out.print("Introduce un quantum: ");
+                            quantum = scan.nextInt();
+
+                            if (quantum <= 0)
+                                System.out.println("El número debe ser mayor que 0");
+
+                        }catch (InputMismatchException e){
+                            System.out.println("El valor introducido no es válido.");
+                        }
+                    }while (quantum <= 0);
+                    break;
+                case "4":
                     break label;
                 default:
                     System.out.println("Opción desconocida");
