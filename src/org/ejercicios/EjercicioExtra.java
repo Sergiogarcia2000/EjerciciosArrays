@@ -3,6 +3,10 @@ package org.ejercicios;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * @author SERGIO GARCÍA MAYO
+ */
+
 public class EjercicioExtra {
 
     public static void main(String[] args){
